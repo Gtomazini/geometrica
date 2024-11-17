@@ -3,19 +3,21 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --yellow-accent: #FCD34D;
+  --shadow-brutal: 4px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+.brutal-shadow {
+  box-shadow: var(--shadow-brutal);
+  transition: all 0.2s ease;
+}
+
+.brutal-shadow:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
 }
