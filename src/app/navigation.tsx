@@ -17,19 +17,19 @@ const Navigation = () => {
 
   return (
     <>
-      {/* Background Statue */}
-      <div className="fixed right-0 top-0 h-screen w-1/2 overflow-hidden">
+      {/* Background Statue - Ajustado */}
+      <div className="fixed right-0 top-0 h-screen w-1/2 overflow-hidden -z-10">
         <div className="relative h-full w-full">
           <Image
             src="/matema.png"
             alt="Musa da Matemática"
             fill
-            className="object-contain object-right"
+            className="object-contain object-right opacity-20"
             style={{ filter: 'grayscale(100%)' }}
             priority
           />
           {/* Efeito amarelo */}
-          <div className="absolute top-0 right-0 h-full w-1/2 bg-yellow-400 opacity-50 transform -skew-x-12" />
+          <div className="absolute top-0 right-0 h-full w-1/2 bg-yellow-400 opacity-30 transform -skew-x-12" />
         </div>
       </div>
 
